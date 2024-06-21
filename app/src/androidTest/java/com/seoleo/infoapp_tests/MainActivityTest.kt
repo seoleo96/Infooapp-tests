@@ -39,4 +39,26 @@ class MainActivityTest {
             )
         )
     }
+
+    @Test
+    fun recycler_should_display_items_info(){
+        val title = "title"
+        val venue = "venue"
+        val endDate = "end date 1"
+        Espresso.onView(
+            ViewMatchers.withText(title)
+        ).check(
+            ViewAssertions.matches(ViewMatchers.isDisplayed())
+        )
+        Espresso.onView(
+            ViewMatchers.withText(venue)
+        ).check(
+            ViewAssertions.matches(ViewMatchers.isDisplayed())
+        )
+        Espresso.onView(
+            ViewMatchers.withText(endDate)
+        ).check(
+            ViewAssertions.matches(ViewMatchers.isDisplayed())
+        )
+    }
 }
