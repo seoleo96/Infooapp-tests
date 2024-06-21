@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.seoleo.infoapp_tests"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.seoleo.infoapp_tests"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
