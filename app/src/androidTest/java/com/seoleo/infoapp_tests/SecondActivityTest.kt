@@ -1,32 +1,31 @@
 package com.seoleo.infoapp_tests
 
-import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.ext.junit.rules.ActivityScenarioRule
-import org.hamcrest.Matchers
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.JUnit4
 
+
 @RunWith(JUnit4::class)
-class MainActivityTest {
+class SecondActivityTest {
 
     @JvmField
     @Rule
-    val mainActivityRule = ActivityScenarioRule(MainActivity::class.java)
+    val rule = ActivityScenarioRule(SecondActivity::class.java)
 
     @Test
-    fun text_view_is_displayed() {
+    fun text_view_is_displayed(){
         textViewInsideLinearLayoutInteraction(R.id.text_view).check(
             ViewAssertions.matches(ViewMatchers.isDisplayed())
         )
     }
 
     @Test
-    fun button_is_displayed() {
-        goToActivityButtonInteraction(R.id.to_second_activity).check(
+    fun back_button_is_displayed(){
+        goToActivityButtonInteraction(R.id.to_back).check(
             ViewAssertions.matches(ViewMatchers.isDisplayed())
         )
     }

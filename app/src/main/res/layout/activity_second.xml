@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:id="@+id/main"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,11 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="first activity" />
+        android:text="Second activity" />
 
     <Button
-        android:id="@+id/to_second_activity"
+        android:id="@+id/to_back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="go to activity" />
+        android:text="go to back" />
 </LinearLayout>
