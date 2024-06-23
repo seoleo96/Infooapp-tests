@@ -14,3 +14,12 @@ fun textViewInsideLinearLayoutInteraction(textView: Int): ViewInteraction {
         )
     )
 }
+
+fun goToActivityButtonInteraction(button: Int): ViewInteraction {
+    return Espresso.onView(
+        Matchers.allOf(
+            ViewMatchers.withId(button),
+            ViewMatchers.withParent(ViewMatchers.isAssignableFrom(LinearLayout::class.java))
+        )
+    )
+}

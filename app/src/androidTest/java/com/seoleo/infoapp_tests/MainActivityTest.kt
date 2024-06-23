@@ -21,4 +21,11 @@ class MainActivityTest {
             ViewAssertions.matches(ViewMatchers.isDisplayed())
         )
     }
+
+    @Test
+    fun button_is_displayed() {
+        goToActivityButtonInteraction(R.id.to_second_activty).check(
+            ViewAssertions.matches(ViewMatchers.isDisplayed())
+        )
+    }
 }
